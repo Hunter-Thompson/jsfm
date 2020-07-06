@@ -49,7 +49,7 @@
 
 	if (!Function.prototype.bind) {
 		Function.bind = Function.prototype.bind = function( obj ) {
-			VAr thisFun = this;
+			var thisFun = this;
 			return function( ) {
 				return thisFun.apply(obj, arguments);
 			};
